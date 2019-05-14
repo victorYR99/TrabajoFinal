@@ -3,6 +3,7 @@ package com.example.alquilervehiculos;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -23,14 +24,6 @@ public class Principal extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -38,6 +31,8 @@ public class Principal extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        Fragment fragment = new PrincipalFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.content, fragment).commit();
     }
 
     @Override
@@ -78,18 +73,26 @@ public class Principal extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        Fragment miFragment = null;
+        boolean fragmentSelected = false;
 
-        } else if (id == R.id.nav_slideshow) {
+        if (id == R.id.nav_home) {
+            fragmentSelected = true;
+
+        } else if (id == R.id.nav_alquiler) {
+
+        } else if (id == R.id.nav_combustible) {
 
         } else if (id == R.id.nav_tools) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_cuenta) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_cerrar_sesion) {
 
+        }
+
+        if(fragmentSelected = true){
+            getSupportFragmentManager().beginTransaction().add(R.id.content, miFragment).commit();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

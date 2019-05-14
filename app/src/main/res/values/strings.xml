@@ -9,11 +9,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_alquiler">Coches en Alquiler</string>
+    <string name="menu_combustible">Combustible</string>
+    <string name="menu_tools">Configuración</string>
+    <string name="menu_csesion">Cerrar Sesión</string>
+    <string name="menu_cuenta">Mi Cuenta</string>
     <string name="title_activity_principal">principal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
