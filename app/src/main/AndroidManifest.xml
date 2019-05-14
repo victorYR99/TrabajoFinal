@@ -10,6 +10,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".ui.main.organizacionFragment"
+                android:label="@string/title_activity_organizacion_fragment"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".Principal"
                 android:label="@string/title_activity_principal"
                 android:theme="@style/AppTheme.NoActionBar">
@@ -23,13 +28,6 @@
                 android:name=".Main2Activity"
                 android:label="@string/title_activity_main2"
                 android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 

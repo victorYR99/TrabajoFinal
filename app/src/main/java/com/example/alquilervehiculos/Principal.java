@@ -80,18 +80,21 @@ public class Principal extends AppCompatActivity
             fragmentSelected = true;
 
         } else if (id == R.id.nav_alquiler) {
-
+            fragmentSelected = true;
         } else if (id == R.id.nav_combustible) {
-
+            fragmentSelected = true;
         } else if (id == R.id.nav_tools) {
+            fragmentSelected = true;
 
         } else if (id == R.id.nav_cuenta) {
+            fragmentSelected = true;
 
         } else if (id == R.id.nav_cerrar_sesion) {
+            fragmentSelected = true;
 
         }
 
-        if(fragmentSelected = true){
+        if(fragmentSelected == true){
             getSupportFragmentManager().beginTransaction().add(R.id.content, miFragment).commit();
         }
 

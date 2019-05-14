@@ -12,8 +12,9 @@ public class Usuario {
     private String telefono;
     private Date fechaNacimiento;
     private Date fechaCreacion;
+    private boolean mujer;
 
-    public Usuario(String idUsuario,String nombreCompleto, String nombreUsu, String contraseña, String email, String telefono, Date fechaNacimiento, Date fechaCreacion) {
+    public Usuario(String idUsuario,String nombreCompleto, String nombreUsu, boolean mujer, String contraseña, String email, String telefono, Date fechaNacimiento, Date fechaCreacion) {
         this.idUsuario = idUsuario;
         this.nombreCompleto = nombreCompleto;
         this.nombreUsu = nombreUsu;
@@ -22,6 +23,7 @@ public class Usuario {
         this.telefono = telefono;
         this.fechaNacimiento = fechaNacimiento;
         this.fechaCreacion = fechaCreacion;
+        this.mujer = mujer;
     }
 
     public String getIdUsuario() {
@@ -86,5 +88,13 @@ public class Usuario {
 
     public void setFechaCreacion(Date fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
+    }
+
+    public boolean isMujer() {
+        return mujer;
+    }
+
+    public void setMujer(boolean mujer) {
+        this.mujer = mujer;
     }
 }
