@@ -19,7 +19,7 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:textColor="@color/colorPrimaryDark"/>
     <Button
-            android:text="Iniciar Sesion"
+            android:text="@string/iniciar_sesion"
             android:layout_width="141dp"
             android:layout_height="46dp"
             android:id="@+id/buttonIniSesion" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
@@ -27,7 +27,7 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.733" android:background="@color/colorAccent"/>
+            app:layout_constraintVertical_bias="0.733" android:background="@color/colorAccent" android:onClick="on"/>
     <Button
             android:text="Crear Usuario"
             android:layout_width="178dp"

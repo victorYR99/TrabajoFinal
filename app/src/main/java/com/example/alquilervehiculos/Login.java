@@ -41,8 +41,7 @@ public class Login extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
     }
 
-    @Override
-    public void onClick(View view) {
+    public void onClickInicarSesion(View view) {
         //Obtenemos el email y la contraseña desde las cajas de texto
         String TextEmail = email.getText().toString().trim();
         String TextPass  = pass.getText().toString().trim();
@@ -69,9 +68,9 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
                         if(task.isSuccessful()){
-                            Toast.makeText(this,"Se ha registrado el usuario con el email: "+ email.getText(),Toast.LENGTH_LONG).show();
+                            Toast.makeText(Login.this,"Se ha registrado el usuario con el email: "+ email.getText(),Toast.LENGTH_LONG).show();
                         }else{
-                            Toast.makeText(this,"No se pudo registrar el usuario ",Toast.LENGTH_LONG).show();
+                            Toast.makeText(Login.this,"No se pudo registrar el usuario ",Toast.LENGTH_LONG).show();
                         }
                         progressDialog.dismiss();
                     }
