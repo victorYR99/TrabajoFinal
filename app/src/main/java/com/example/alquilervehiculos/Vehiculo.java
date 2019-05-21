@@ -16,7 +16,8 @@ public class Vehiculo {
     private int precioDia;
     private ArrayList<String> fotos;
 
-    public Vehiculo(String idVehiculo, String idPropietario, String marca, String modelo, String plazas, String puertas, int kilonmetros, int añoVehiculo, int precioDia, ArrayList<String> fotos) {
+    public Vehiculo(String idVehiculo, String idPropietario, String marca, String modelo, String plazas,
+                    String puertas, int kilonmetros, int añoVehiculo, int precioDia, ArrayList<String> fotos) {
         this.idVehiculo = idVehiculo;
         this.idPropietario = idPropietario;
         this.marca = marca;

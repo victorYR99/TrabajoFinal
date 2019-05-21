@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101504008390",
+    "firebase_url": "https://alquilervehiculos-bc9d3.firebaseio.com",
+    "project_id": "alquilervehiculos-bc9d3",
+    "storage_bucket": "alquilervehiculos-bc9d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101504008390:android:f6812a3b9238e236",
+        "android_client_info": {
+          "package_name": "com.example.alquilervehiculos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101504008390-5qmsi27h98r8j39ihb404k3b94bg1gad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alquilervehiculos",
+            "certificate_hash": "1d1578bc920863dcad30cfec37d7ca0ff0bc1b30"
+          }
+        },
+        {
+          "client_id": "101504008390-5v3hl1e6mpotcijgm7bs6j0odqbd35ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE65JIjI0OAPIMm2vVWDfRJOtJ8dAmryo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101504008390-5v3hl1e6mpotcijgm7bs6j0odqbd35ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

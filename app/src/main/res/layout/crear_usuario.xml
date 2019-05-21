@@ -75,7 +75,7 @@
                     android:layout_height="56dp"
                     android:inputType="textPersonName"
                     android:ems="10"
-                    android:id="@+id/editTextContraseñaRepetida"
+                    android:id="@+id/editTextPass"
                     android:textColor="@color/colorPrimaryDark" android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp" android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp" android:layout_marginTop="8dp"
