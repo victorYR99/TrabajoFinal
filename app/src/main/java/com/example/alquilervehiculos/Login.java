@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class Login extends AppCompatActivity {
 
@@ -70,7 +71,11 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this,"Se ha registrado el usuario con el email: "+ email.getText(),Toast.LENGTH_LONG).show();
                         }else{
-                            Toast.makeText(Login.this,"No se pudo registrar el usuario ",Toast.LENGTH_LONG).show();
+                            if (task.getException() instanceof FirebaseAuthUserCollisionException) {//si se presenta una colisión
+                                Toast.makeText(Login.this, "Ese usuario ya existe ", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(Login.this, "No se pudo registrar el usuario ", Toast.LENGTH_LONG).show();
+                            }
                         }
                         progressDialog.dismiss();
                     }

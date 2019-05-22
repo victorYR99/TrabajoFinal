@@ -28,7 +28,7 @@
                     android:textColor="@color/colorPrimaryDark"/>
             <EditText
                     android:layout_width="383dp"
-                    android:layout_height="56dp"
+                    android:layout_height="63dp"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/editTextNombreCompleto"
